@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,185 +12,254 @@
 
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- header design -->
-    <header class="header">
-      <a href="#"class="logo">Potfolio </a>
-      <nav class="navbar">
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-      </nav>
-      </header>
-     
-    <section class="home" id="home">
-      <div class="home-content">
-        <h3>Hello,its me</h3>
-                <h1>Mungujakisa Chrispus</h1>
-                <h3> and I am a <span class="multiple-text">Frontend developer</span></h3>
-                <p>I am frontend deveoper with knowledge in programming languages like React,css,html,node.js among others and in the bid to improve my skills i have been attending a number of courses from scrimba and traversy media.I am willing to adapt to new technological advancement inorder to stay ahead of the developer curve 
-                </p> 
-                <div class="social-media">
-                    <a href="#"><i class='bx bxl-facebook'></i></a>
-                        <a href="#"><i class='bx bxl-twitter'></i></a>
-                        <a href="#"><i class='bx bxl-telegram' ></i></a>
-                        <a href="#"><i class='bx bxl-whatsapp' ></i></a>        
-                        <a href="#"><i class='bx bxl-discord-alt'></i></a>
-                </div>
-                <a href="#" class="btn"><i class='bx bxs-download'></i>download CV</a>
+
+    <nav>
+        <div class="logo">
+            <h1><a href="#about" class="logo-heading">KenmaTours&Safari</a></h1>
+        </div>
+        <ul class="sidebar">
+            <li class=" about active"><a href="#starter">About</a></li>
+            <li class="project"><a href="#services">Safari</a></li>
+            <li class="gallery"><a href="#project">Gallery</a></li>
+            <li class="book"><a href="#contact">Contact</a></li>
+            <i class='bx bxs-phone-call'>+256 392 085 535</i>
+            <button class="expert-btn"><a href="./pages/expert.html">EXPERT ADVISE</a></button>
+        </ul>
+        <div class="menu-icon1">
+            <img src="./images/dehaze.svg" class="menu-icon" width="20px" height="20px" onclick=toggleMenu() alt="">
+        </div>
+    </nav>
+
+    <section class="starter" id="starter">
+        <div class="starter-content">
+            <h1>About <span class="multiple-text"> US<span></h1>
+            <p>At KenmaTours,we believe travel should move you. From misty mountains to royal Kingdoms,we craft experiences that stir the soul, excite the senses, and offer deeper meaning.uganda is a place that feels both new and familiar-wlecoming and full
+                of wonder</p>
+        </div>
+    </section>
+    <section class="vision">
+        <div class="vision-content">
+            <h1>Our <span class="multiple-text"> Vision</span></h1>
+            <p>Kenma Tours and Safaris — Where Every Path Leads to Connection At Kenma Tours and Safaris, we believe every tour and safari is an invitation to connect — with Uganda’s breathtaking nature, vibrant cultures, and endless adventures waiting to
+                be discovered.
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Safaris</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <img src="./images/rivernile.jpg" alt="">
+                <h1>River Nile</h1>
+                <h3>
+                    Cruise,raft or Kayyak along the world's largets river frim its vibrant source
+                </h3>
+                <a href="#" class="btn">Read more</i></a>
             </div>
-            <div class="home-image">
-                <img src="images/home.png" alt="">
+            <div class="services-box">
+                <img src="./images/lake.jpg" alt="">
+                <h1>Lake Bunyonyi</h1>
+                <h3>
+                    Find serenity on the magical islands of Uganda's most beautiful lake
+                </h3>
+
+                <a href="#" class="btn">Read more</i></a>
             </div>
-        </section>
-        <section class="home" id="about">
-          <div class="home-image">
-            <img src="images/about.png" alt="">
+            <div class="services-box">
+                <img src="./images/dance.jpeg" alt="">
+                <h1>cultural immersion</h1>
+                <h3>
+                    Drum,dance,dine and connect with the heartbeat of Uganda
+                </h3>
+                <a href="#" class="btn">Read more</i></a>
+            </div>
+            <div class="services-box">
+                <img src="./images/toro.jpeg" alt="">
+                <h1>Toro Kingdom</h1>
+                <h3>
+                    Walk through living royalty and cultural elegance in FortPortal
+                </h3>
+                <a href="#" class="btn">Read more</i></a>
+            </div>
+            <div class="services-box">
+                <img src="./images/queen.jpg" alt="">
+                <h1>Queen Elizabeth Safari</h1>
+                <h3>
+                    See lions,elephants,Hippos among others in cinematic wilderness
+                </h3>
+                <a href="#" class="btn">Read more</i></a>
+            </div>
+            <div class="services-box">
+                <img src="./images/Gorilla.jpg" alt="">
+                <h1>Gorilla Trekking</h1>
+                <h3>
+                    Encounter mountain Gorillas in their mystical rainforest Sanctuary
+                </h3>
+                <a href="#" class="btn">Read more</i></a>
+            </div>
         </div>
-          <div class="home-content">
-                    <h1>ABOUT <span class="multiple-text"> ME</span></h1>
-                    <h3> and I am a <span class="multiple-text">Frontend developer</span></h3>
-                    <p>I am frontend deveoper with knowledge in programming languages like React,css,html,node.js among others and in the bid to improve my skills i have been attending a number of courses from scrimba and traversy media.I am willing to adapt to new technological advancement inorder to stay ahead of the developer curve 
-                    <a href="#" class="btn">READ MORE</a>
+    </section>
+    <section class="projects" id="project">
+        <h2 class="heading"> Our Journey<span> Gallery</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="./images/rivernile.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web design</h4>
+                    <p>You mean "automatically hire"? No, but from time to time there are opportunities for open positions or internships What to do hash the message Then sign the signatur
+                    </p>
+                    <a href="#"><i clsss="bx bx-link-external"> </i></a>
                 </div>
-            </section>
+            </div>
+            <div class="portfolio-box">
+                <img src="./images/rhino.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web design</h4>
+                    <p>You mean "automatically hire"? No, but from time to time there are opportunities for open positions or internships What to do hash the message Then sign the signatur
+                    </p>
+                    <a href="#"><i clsss="bx bx=link-external"> </i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./images/banner.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web design</h4>
+                    <p>You mean "automatically hire"? No, but from time to time there are opportunities for open positions or internships What to do hash the message Then sign the signatur
+                    </p>
+                    <a href="#"><i clsss="bx bx-link-external"> </i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./images/girrafe.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web design</h4>
+                    <p>You mean "automatically hire"? No, but from time to time there are opportunities for open positions or internships What to do hash the message Then sign the signatur
+                    </p>
+                    <a href="#"><i clsss="bx bx-link-external"> </i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./images/toro.jpeg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web design</h4>
+                    <p>You mean "automatically hire"? No, but from time to time there are opportunities for open positions or internships What to do hash the message Then sign the signatur
+                    </p>
+                    <a href="#"><i clsss="bx bx-link-external"> </i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./images/tree.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web design</h4>
+                    <p>You mean "automatically hire"? No, but from time to time there are opportunities for open positions or internships What to do hash the message Then sign the signatur
+                    </p>
+                    <a href="#"><i clsss="bx bx-link-external"> </i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./images/Gorilla.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web design</h4>
+                    <p>You mean "automatically hire"? No, but from time to time there are opportunities for open positions or internships What to do hash the message Then sign the signatur
+                    </p>
+                    <a href="#"><i clsss="bx bx-link-external"> </i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./images/imy8.jpeg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web design</h4>
+                    <p>You mean "automatically hire"? No, but from time to time there are opportunities for open positions or internships What to do hash the message Then sign the signatur
+                    </p>
+                    <a href="#"><i clsss="bx bx-link-external"> </i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./images/imy5.jpeg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web design</h4>
+                    <p>You mean "automatically hire"? No, but from time to time there are opportunities for open positions or internships What to do hash the message Then sign the signatur
+                    </p>
+                    <a href="#"><i clsss="bx bx-link-external"> </i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./images/imy3.jpeg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web design</h4>
+                    <p>You mean "automatically hire"? No, but from time to time there are opportunities for open positions or internships What to do hash the message Then sign the signatur
+                    </p>
+                    <a href="#"><i clsss="bx bx-link-external"> </i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./images/imy2.jpeg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web design</h4>
+                    <p>You mean "automatically hire"? No, but from time to time there are opportunities for open positions or internships What to do hash the message Then sign the signatur
+                    </p>
+                    <a href="#"><i clsss="bx bx-link-external"> </i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./images/imy1.jpeg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web design</h4>
+                    <p>You mean "automatically hire"? No, but from time to time there are opportunities for open positions or internships What to do hash the message Then sign the signatur
+                    </p>
+                    <a href="#"><i clsss="bx bx-link-external"> </i></a>
+                </div>
+            </div>
+        </div>
 
-     <section class="services" id="services">
-      <h2 class="heading">Our <span>Services</span></h2>
-      <div class="services-container">
-        <div class="services-box">
-          <i class="bx bx-code-alt"></i>
-          <h3>Web3 development</h3>
-          <p>
-            Have been able to work on a number of web applications like leadetracker ,text to speach ,gameperl website ,shopping list,support desk app among others
-        </p> 
-        <a href="#" class="btn">Read more</i></a>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="heading"> Contact <span>Us </span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder=" Email address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile number">
+                <input type="text" placeholder=" Email subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="your message"></textarea>
+            <input type="submit" value="send message " class="btn">
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer-box ">
+            <a href="./pages/about.html">
+                <h1>About</h1>
+            </a>
         </div>
-        <div class="services-box">
-          <i class="bx bxs-paint"></i>
-          <h3>Graphics design</h3>
-          <p>You mean "automatically hire"? No, but from time to time there are opportunities for open positions or internships What to do hash the message
-            Then sign the signatur
-        </p> 
-        <a href="#" class="btn">Read more</i></a>
+        <div class="footer-box ">
+            <h3>Our socials</h3>
+            <i class='bx bxl-facebook-square'> KenmaTours</i>
+            <i class='bx bxl-instagram'> KenmaTours</i>
+            <i class='bx bxl-tiktok'> KenmaTours</i>
         </div>
-        <div class="services-box">
-          <i class="bx bx-bar-chart -alt"></i>
-          <h3>Digital marketing</h3>
-          <p>You mean "automatically hire"? No, but from time to time there are opportunities for open positions or internships What to do hash the message
-            Then sign the signatur
-        </p> 
-        <a href="#" class="btn">Read more</i></a>
+        <div class="footer-box ">
+            <h3>Contact</h3>
+            <span>Email:Kenmatours@gmail.com</span>
+            <span>Mobile No:+256 392 085 535</span>
         </div>
-      </div>
-      
+    </footer>
 
-     </section>
-     <section class="projects" id="projects">
-      <h2  class="heading"> latest <span>Projects</span></h2>
-      <div class="portfolio-container">
-        <div class="portfolio-box">
-           <img src="images/portfolio1.jpg" alt="">
-           <div class="portfolio-layer">
-            <h4>Web design</h4>
-            <p>You mean "automatically hire"? No, but from time to time there are opportunities for open positions or internships What to do hash the message
-              Then sign the signatur
-          </p> 
-          <a href="#"><i clsss="bx bx-link-external"> </i></a>
-          </div>
-          </div>
-          <div class="portfolio-box">
-            <img src="images/portfolio2.jpg" alt="">
-            <div class="portfolio-layer">
-             <h4>Web design</h4>
-             <p>You mean "automatically hire"? No, but from time to time there are opportunities for open positions or internships What to do hash the message
-               Then sign the signatur
-           </p> 
-           <a href="#"><i clsss="bx bx=link-external"> </i></a>
-           </div>
-           </div>
-           <div class="portfolio-box">
-            <img src="images/portfolio3.jpg" alt="">
-            <div class="portfolio-layer">
-             <h4>Web design</h4>
-             <p>You mean "automatically hire"? No, but from time to time there are opportunities for open positions or internships What to do hash the message
-               Then sign the signatur
-           </p> 
-           <a href="#"><i clsss="bx bx-link-external"> </i></a>
-           </div>
-           </div>
-           <div class="portfolio-box">
-            <img src="images/portfolio4.jpg" alt="">
-            <div class="portfolio-layer">
-             <h4>Web design</h4>
-             <p>You mean "automatically hire"? No, but from time to time there are opportunities for open positions or internships What to do hash the message
-               Then sign the signatur
-           </p> 
-           <a href="#"><i clsss="bx bx-link-external"> </i></a>
-           </div>
-           </div>
-           <div class="portfolio-box">
-            <img src="images/portfolio5.jpg" alt="">
-            <div class="portfolio-layer">
-             <h4>Web design</h4>
-             <p>You mean "automatically hire"? No, but from time to time there are opportunities for open positions or internships What to do hash the message
-               Then sign the signatur
-           </p> 
-           <a href="#"><i clsss="bx bx-link-external"> </i></a>
-           </div>
-           </div>
-           <div class="portfolio-box">
-            <img src="images/portfolio6.jpg" alt="">
-            <div class="portfolio-layer">
-             <h4>Web design</h4>
-             <p>You mean "automatically hire"? No, but from time to time there are opportunities for open positions or internships What to do hash the message
-               Then sign the signatur
-           </p> 
-           <a href="#"><i clsss="bx bx-link-external"> </i></a>
-           </div>
-           </div>
-          </div>
-     </section>
-<section class="contact" id="contact">
-  <h2  class="heading"> Contact <span>Me </span></h2>
-  <form action="#">
-    <div class="input-box">
-      <input type="text" placeholder="Full Name">
-      <input type="email" placeholder=" Email address">
+
     </div>
-    <div class="input-box">
-    <input type="number"placeholder="Mobile number">
-      <input type="text" placeholder=" Email subject">
-    </div>
-    <textarea name="" id="" cols="30" rows="10" placeholder="your message"></textarea>
-    <input type="submit" value="send message " class="btn">
-  </form>
-</section>
-<footer class="footer">
-  <div class="footer-text">
-    <p>
-      Copyright 2023 by popular chris <span>||</span> Allrights reserved
-    </p>
-  </div>
-  <div class="footer-icon">
-    <a href="#home">BackToHome </a>
-  </div>
-</footer>
 
-
-</div>
-   
 
     <script src="https://unpkg.com/scrollreveal">
-      
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <script src="js/script.js"></script>
-  </body>
+</body>
+
 </html>
