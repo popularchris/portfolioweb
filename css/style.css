@@ -140,6 +140,7 @@ section {
 }
 
 .home {
+    position: relative;
     background-image: url(../images/rhino.jpg);
     display: flex;
     justify-content: center;
@@ -147,49 +148,56 @@ section {
 }
 
 .home-content h3 {
-    font-size: 2.6rem;
-    font-weight: 600px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 40px;
 }
 
-.home-content h3:nth-last-of-type(2) {
-    margin-bottom: 2rem;
-}
-
-span {
-    color: #dcaf85;
-}
-
-.home-content h1 {
-    font-size: 4.6rem;
-    font-weight: 700px;
-    letter-spacing: .5rem;
-}
-
-.home-content a {
-    font-size: 1.6rem;
-    font-weight: 70px;
-    letter-spacing: .5rem;
-}
-
-.home-image img {
-    width: 35vw;
-    animation: floatimage 4s ease-in-out infinite;
-}
-
-.home-content p {
-    font-size: 1.6rem;
-    line-height: 2.2rem;
-}
-
-.home {
-    display: flex;
-    justify-content: center;
+.choose-btn {
+    margin-top: 20px;
     align-items: center;
+    display: flex;
+    gap: 50px;
+    margin-left: 20px;
 }
 
-.home-content h3 {
-    font-size: 2.6rem;
-    font-weight: 600px;
+.adventure-btn {
+    border-radius: 16px;
+}
+
+.adventure-btn a {
+    color: var(--text-color);
+}
+
+.adventure-btn:hover {
+    box-shadow: 0 0 5rem var(--text-color);
+    cursor: pointer;
+}
+
+.adventure-btn1:hover {
+    box-shadow: 0 0 5rem var(--text-color);
+    cursor: pointer;
+}
+
+.adventure-btn1 {
+    border-radius: 16px;
+    padding: 20px;
+    color: var(--text-color);
+    background-color: #000000;
+}
+
+.choose-btn span {
+    font-size: 20px;
+    color: var(--bg-color);
+}
+
+.adventure-btn {
+    margin-left: 100px;
+}
+
+.adventure-btn {
+    background-color: #dcaf85;
+    padding: 20px;
 }
 
 span {
@@ -202,19 +210,12 @@ span {
     letter-spacing: .5rem;
 }
 
-.home-content a {
-    font-size: 1.6rem;
-    font-weight: 70px;
-    letter-spacing: .5rem;
+span {
+    color: #dcaf85;
 }
 
-.about-image img {
-    width: 35vw;
-}
-
-.home-content p {
-    font-size: 1.6rem;
-    line-height: 2.2rem;
+.home-content h1 {
+    color: var(--bg-color)
 }
 
 .social-media a i {
