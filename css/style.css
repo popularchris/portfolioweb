@@ -315,6 +315,38 @@ span {
     font-size: 18px;
 }
 
+.ceo img {
+    width: 400px;
+    height: 300px;
+    border-radius: 200px;
+}
+
+.ceo p {
+    color: #dcaf85;
+    font-size: 20px;
+}
+
+.ceo-heading {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.ceo {
+    background-color: var(--bg-color);
+    align-items: center;
+    margin-top: 30px;
+    gap: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ceo-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
 .services-box p {
     font-size: 2.6rem;
     font-size: large;
@@ -494,7 +526,7 @@ span {
 .vision {
     justify-content: center;
     margin: 0 auto;
-    background-image: url(../images/tga.jpg);
+    background-color: #e8d8cd;
     background-size: cover;
     object-fit: cover;
     display: flex;
@@ -507,7 +539,8 @@ span {
 }
 
 .vision p {
-    font-size: 30px
+    color: #2a312c;
+    font-size: 25px
 }
 
 .home-image img {
@@ -519,13 +552,18 @@ span {
 }
 
 .starter {
-    background-image: url(../images/tga.jpg);
     background-repeat: no-repeat;
     object-fit: cover;
     display: flex;
+    position: relative;
+    flex-direction: column;
+    background-image: url(../images/tga.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .starter-content {
+    width: 100%;
     margin-top: 150px;
     justify-content: center;
     text-align: center;
@@ -533,7 +571,18 @@ span {
 }
 
 .starter-content h1 {
+    margin-top: 100px;
     font-size: 50px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .7), rgba(0, 0, 0, .4), rgba(0, 0, 0, 0));
+}
+
+.about-content {
+    border-bottom: 2px solid #fff;
+}
+
+.about-content p {
+    font-size: 25px;
+    color: #dcaf85;
 }
 
 .copyrit {
@@ -612,6 +661,13 @@ span {
     }
     .navbar {
         display: none;
+    }
+}
+
+@media(max-width:841px) {
+    .ceo {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -712,6 +768,20 @@ span {
     }
 }
 
+@media(max-width:430px) {
+    .about-content p {
+        font-size: 15px;
+    }
+    .ceo img {
+        width: 300px;
+        height: 200px;
+        border-radius: 200px;
+    }
+    .ceo p {
+        font-size: 15px;
+    }
+}
+
 .about {
     flex-direction: column-reverse;
 }
@@ -732,5 +802,13 @@ span {
     .footer p {
         text-align: center;
         margin-top: 2rem;
+    }
+}
+
+@media(max-width:430px) {
+    .ceo img {
+        width: 250px;
+        height: 170px;
+        border-radius: 200px;
     }
 }
