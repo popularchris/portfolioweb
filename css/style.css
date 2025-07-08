@@ -100,6 +100,14 @@ body {
     padding: 5px;
 }
 
+.sidebar.open {
+    height: 450px;
+}
+
+.sidebar ul .open {
+    opacity: 1;
+}
+
 #menu-icon {
     font-size: 3.6rem;
     color: var(--text-color);
@@ -176,9 +184,10 @@ span {
 }
 
 .home-content h1 {
-    font-size: 4.6rem;
+    font-size: 7rem;
     font-weight: 700px;
     letter-spacing: .5rem;
+    text-align: center;
 }
 
 span {
@@ -426,6 +435,7 @@ span {
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
+    height: 200px;
     gap: 5rem;
     padding: 4rem 9%;
     background: var(--second-bg-color);
@@ -483,12 +493,11 @@ span {
 
 .vision h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
 }
 
 .vision p {
     color: #2a312c;
-    font-size: 25px
 }
 
 .home-image img {
@@ -518,21 +527,6 @@ span {
     align-items: center;
 }
 
-.algn {
-    align-items: center;
-    gap: 10px;
-    display: flex;
-    margin-right: 30px;
-}
-
-.algn .adventure-btn a {
-    font-size: 15px;
-}
-
-.algn .adventure-btn1 a {
-    font-size: 15px;
-}
-
 .starter-content h1 {
     margin-top: 100px;
     font-size: 50px;
@@ -541,12 +535,6 @@ span {
 
 .about-content {
     border-bottom: 2px solid #fff;
-}
-
-.heading-journey {
-    font-size: 20px;
-    margin-top: 20px;
-    color: #dcaf85;
 }
 
 .interest-container {
@@ -602,23 +590,15 @@ span {
     color: #dcaf85;
 }
 
+.contact-body {
+    background-color: #dcaf85;
+    color: #000000;
+}
+
 .expert-btn:hover {
     background-color: #80808080;
     text-decoration: none;
 }
-
-
-/* @keyframes floatingimage {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-2.4rem);
-    }
-    100% {
-        transform: translateY(0);
-    }
-} */
 
 @keyframes change {
     0% {
@@ -646,6 +626,33 @@ span {
     .expert-btn {
         display: none;
     }
+    .home-content h1 {
+        margin-top: 30px;
+        line-height: 5rem;
+        text-align: center;
+    }
+    .home-content h1 {
+        font-size: 40px;
+        line-height: 10rem;
+    }
+}
+
+@media(max-width:1075px) {
+    .home-content h1 {
+        margin-top: 30px;
+        line-height: 5rem;
+        text-align: center;
+    }
+    .home-content h1 {
+        font-size: 60px;
+        line-height: 8rem;
+        margin-bottom: 20px;
+    }
+    .choose-btn {
+        position: absolute;
+        left: 50px;
+        bottom: 0;
+    }
 }
 
 @media(max-width:1000px) {
@@ -653,6 +660,15 @@ span {
         position: absolute;
         left: 100px;
         bottom: 0;
+    }
+    .home-content h1 {
+        margin-top: 30px;
+        line-height: 5rem;
+        text-align: center;
+    }
+    .home-content h1 {
+        font-size: 40px;
+        line-height: 10rem;
     }
 }
 
@@ -662,6 +678,16 @@ span {
     }
     section {
         padding: 10rem 3%;
+    }
+    .home-content h1 {
+        margin-top: 30px;
+        line-height: 5rem;
+        text-align: center;
+    }
+    .home-content h1 {
+        font-size: 60px;
+        line-height: 8rem;
+        margin-bottom: 20px;
     }
     .footer {
         padding: 2rem 3%;
@@ -673,7 +699,46 @@ span {
     }
 }
 
+@media(max-width:995px) {
+    .choose-btn {
+        position: absolute;
+        left: 70px;
+        bottom: 0;
+    }
+    .destinationplan {
+        margin-bottom: 20px;
+    }
+}
+
 @media(max-width:883px) {
+    .home-content h1 {
+        text-align: center;
+    }
+    .choose-btn {
+        position: absolute;
+        left: 30px;
+        bottom: 0;
+    }
+}
+
+@media(max-width:892px) {
+    .home-content h1 {
+        margin-top: 30px;
+        line-height: 5rem;
+        text-align: center;
+    }
+    .home-content h1 {
+        font-size: 50px;
+        line-height: 10rem;
+    }
+    .choose-btn {
+        position: absolute;
+        left: 30px;
+        bottom: 0;
+    }
+}
+
+@media(max-width:891px) {
     .home-content h1 {
         text-align: center;
     }
@@ -734,30 +799,21 @@ span {
         display: flex;
     }
     .sidebar {
-        display: none;
+        display: flex;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        left: 0;
+        background-color: #000000;
+        flex-direction: column;
+        padding: 10px;
+        opacity: 0;
+        transition: 0.3s ease;
+        overflow: hidden;
     }
 }
 
 @media(max-width:768px) {
-    .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 3%;
-        background-color: var(--bg-color);
-        border-top: .1rem solid rgba(0, 0, 0, .2);
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-        display: none;
-    }
-    .navbar.active {
-        display: block;
-    }
-    .navbar a {
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
     .home {
         flex-direction: column;
     }
@@ -846,17 +902,35 @@ span {
     .home-content h3 {
         font-size: 15px;
     }
+    .home-content h1 {
+        margin-top: 30px;
+        line-height: 5rem;
+    }
+    .home-content h1 {
+        font-size: 30px;
+    }
 }
 
 @media(max-width:550px) {
     .bout-content p {
         font-size: 20px;
     }
+    .home-content h1 {
+        margin-top: 30px;
+        line-height: 5rem;
+    }
+    .home-content h1 {
+        font-size: 30px;
+    }
 }
 
 @media(max-width:471px) {
     .home-content h1 {
-        font-size: 10px;
+        font-size: 20px;
+    }
+    .home-content h1 {
+        margin-top: 20px;
+        line-height: 5rem;
     }
     .about-content p {
         font-size: 10px;
@@ -882,17 +956,18 @@ span {
 }
 
 @media(max-width:450px) {
-    html {
-        font-size: 50%;
-    }
     .logo-heading {
         font-size: 20px;
+        margin-top: 40px;
     }
     .vision-content p {
         font-size: 18px;
     }
-    .starter-content p {
-        font-size: 18px;
+    .home-content h1 {
+        font-size: 20px;
+    }
+    .home-content {
+        margin-top: 30px;
     }
 }
 
@@ -900,17 +975,26 @@ span {
     .about-content h1 {
         font-size: 20px;
     }
+    .logo-heading {
+        margin-top: 60px;
+    }
+    .starter-content h1 {
+        font-size: 25px;
+    }
     .about-content h3 {
         font-size: 15px;
         letter-spacing: 1.5rem;
     }
     .ceo img {
-        width: 300px;
+        width: 200px;
         height: 200px;
         border-radius: 200px;
     }
     .ceo p {
         font-size: 15px;
+    }
+    .ceo-heading {
+        font-size: 25px;
     }
 }
 
@@ -918,12 +1002,20 @@ span {
     flex-direction: column-reverse;
 }
 
-@media(max-width:430px) {
-    .ceo img {
-        width: 250px;
-        height: 170px;
-        border-radius: 200px;
-    }
+.about-content p {
+    font-size: 18px;
+}
+
+.footer-box h1 {
+    font-size: 18px;
+}
+
+.vision-content p {
+    font-size: 15px;
+}
+
+.vision-content h1 {
+    font-size: 28px;
 }
 
 @media(max-width:386px) {
@@ -976,10 +1068,10 @@ span {
         font-size: 10px;
     }
     .home-content h1 {
-        font-size: 5px;
+        font-size: 20px;
     }
     .ceo-heading {
-        font-size: 10px;
+        font-size: 15px;
     }
     .heading {
         font-size: 10px;
@@ -998,6 +1090,91 @@ span {
     }
     .menu-icon1 {
         width: 20px;
+    }
+    .navbar {
+        width: 10%;
+    }
+    .home-content {
+        width: 100%;
+    }
+    .home-content h3 {
+        font-size: 15px;
+    }
+    .vision-content h1 {
+        font-size: 25px;
+    }
+    .vision-content p {
+        font-size: 15px;
+    }
+    .starter-content h1 {
+        font-size: 25px;
+    }
+    .heading {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:350px) {
+    .ceo img {
+        width: 100px;
+        height: 100px;
+    }
+    .ceo-heading {
+        font-size: 15px;
+    }
+    .starter-content h1 {
+        font-size: 15px;
+    }
+    .home-content h1 {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    .footer-box h1 {
+        font-size: 15px;
+    }
+    .footer-box i {
+        font-size: 15px;
+    }
+    .contact h2 {
+        font-size: 15px;
+    }
+}
+
+@media(max-width:338px) {
+    .home-content {
+        width: 100%;
+    }
+}
+
+@media(max-width:270px) {
+    .starter-content h1 {
+        font-size: 15px;
+        line-height: 2rem;
+    }
+    .home-content h1 {
+        font-size: 5px;
+    }
+    .home-content h1 {
+        font-size: 10px;
+        margin-top: 20px;
+    }
+    .ceo-heading {
+        font-size: 10px;
+    }
+    .heading {
+        font-size: 10px;
+    }
+    .services-box h1 {
+        font-size: 15px;
+    }
+    .services-box h3 {
+        font-size: 10px;
+    }
+    .services-box a {
+        font-size: 10px;
+    }
+    .home-content {
+        width: 100%;
     }
 }
 
@@ -1023,5 +1200,121 @@ span {
     }
     .services-box a {
         font-size: 15px;
+    }
+    .home-content {
+        width: 100%;
+    }
+    .home-content h1 {
+        margin-top: 30px;
+        line-height: 5rem;
+    }
+    .home-content h1 {
+        font-size: 15px;
+    }
+}
+
+@media(max-width:250px) {
+    .starter-content h1 {
+        font-size: 10px;
+    }
+    .home-content h1 {
+        font-size: 10px;
+    }
+    .home-content h1 {
+        margin-top: 30px;
+        line-height: 5rem;
+    }
+    .home-content h1 {
+        font-size: 10px;
+    }
+}
+
+@media(max-width:228px) {
+    .home-content {
+        width: 100%;
+    }
+    .ceo img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media(max-width:200px) {
+    .home-content {
+        width: 100%;
+    }
+    .logo-heading {
+        font-size: 10px;
+    }
+    .ceo img {
+        width: 100px;
+        height: 100px;
+    }
+    .footer-box {
+        font-size: 10px;
+    }
+    .footer-box a {
+        font-size: 13px;
+    }
+    .services-box a {
+        font-size: 10px;
+    }
+    .footer-box {
+        font-size: 7px;
+    }
+    .footer-box h1 {
+        font-size: 15px;
+    }
+    .footer-box a {
+        font-size: 15px;
+    }
+    .footer-box i {
+        font-size: 10px;
+    }
+    .ceo p {
+        font-size: 10px;
+    }
+    .home-content h1 {
+        font-size: 8px;
+        margin-top: 20px;
+    }
+    .services-box a {
+        font-size: 10px;
+    }
+    .btn {
+        font-size: 5px;
+        width: 80px;
+    }
+    .vision-content p {
+        font-size: 10px;
+    }
+}
+
+@media(max-width:150px) {
+    .home-content {
+        width: 100%;
+    }
+    .ceo img {
+        width: 100px;
+        height: 100px;
+    }
+    .footer-box {
+        font-size: 7px;
+    }
+    .footer-box a {
+        font-size: 15px;
+    }
+    .footer-box i {
+        font-size: 15px;
+    }
+    .services-box a {
+        font-size: 15px;
+    }
+    .btn {
+        font-size: 10px;
+        width: 80px;
+    }
+    .logo-heading {
+        font-size: 10px;
     }
 }
