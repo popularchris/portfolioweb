@@ -18,31 +18,25 @@ ScrollReveal({
     delay: 200,
 });
 // ScrollReveal().reveal('.home-image, .service-container,.portfolio-box,.contact form', { origin: 'bottom' });
-// ScrollReveal().reveal('.home-content h1, about-image', { origin: 'left' })
-// ScrollReveal().reveal('.home-content p, home-content', { origin: 'right' });
-// ScrollReveal().reveal('.adventure-btn', { origin: 'left' })
-// ScrollReveal().reveal('.adventure-btn1', { origin: 'right' })
-// ScrollReveal().reveal('.home-content p, home-content', { origin: 'right' });
+// // ScrollReveal().reveal('.home-content h1, about-image', { origin: 'left' })
+// // ScrollReveal().reveal('.home-content p, home-content', { origin: 'right' });
+// // ScrollReveal().reveal('.adventure-btn', { origin: 'left' })
+// // ScrollReveal().reveal('.adventure-btn1', { origin: 'right' })
+// // ScrollReveal().reveal('.home-content p, home-content', { origin: 'right' });
 // ScrollReveal().reveal('.starter-content', { origin: 'top' });
 // ScrollReveal().reveal('.about-content', { origin: 'top' });
 // ScrollReveal().reveal('.ceo-heading', { origin: 'top' });
-// ScrollReveal().reveal('.ceop', { origin: 'right' });
-// ScrollReveal().reveal('.ceoimg', { origin: 'left' });
-// ScrollReveal().reveal('.about-content', '.home-content', { origin: 'top' });
+// // ScrollReveal().reveal('.ceop', { origin: 'right' });
+// // ScrollReveal().reveal('.ceoimg', { origin: 'left' });
+// // ScrollReveal().reveal('.about-content', '.home-content', { origin: 'top' });
 // ScrollReveal().reveal('.services', { origin: 'bottom' });
 // ScrollReveal().reveal('.spanheading', { origin: 'top' });
-// ScrollReveal().reveal('.spanp', { origin: 'left' });
-// ScrollReveal().reveal('.destination-plan', { origin: 'right' });
+// // ScrollReveal().reveal('.spanp', { origin: 'left' });
+// // ScrollReveal().reveal('.destination-plan', { origin: 'right' });
 // ScrollReveal().reveal('.footer-box', { origin: 'bottom' });
 
 
-
-
-/*==================== typed js ====================*/
-// const typed = new typed('.multiple-text', {
-//     strings: ['Frontend & backend developer', 'Electronics engineer', 'Youtuber', 'Blogger'],
-//     typeSpeed: 5000,
-//     backSpeed: 5000,
-//     backDelay: 5000,
-//     loop: true,
-// });
+// const menuicon = document.querySelectorAll('.menu-icon')
+// menuicon.addEventListener('clcik', function() {
+//     menuicon.toggle('menuixon')
+// })
