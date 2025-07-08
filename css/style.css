@@ -172,7 +172,7 @@ section {
 
 .choose-btn span {
     font-size: 20px;
-    color: var(--bg-color);
+    color: var(--text-color);
 }
 
 .adventure-btn {
@@ -417,6 +417,7 @@ span {
     background-color: var(--second-bg-color);
     border-radius: .8rem;
     margin: .7rem 0;
+    margin-top: 20px;
 }
 
 .input-box input {
@@ -555,6 +556,24 @@ span {
     border-bottom: 2px solid #fff;
 }
 
+.heading-journey {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #dcaf85;
+}
+
+.interest-container {
+    margin-top: 20px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.interest-container label {
+    color: #dcaf85;
+    flex-wrap: wrap;
+}
+
 .about-content p {
     font-size: 25px;
     color: #dcaf85;
@@ -562,8 +581,11 @@ span {
 
 .choose-btn {
     position: absolute;
-    left: 180px;
-    bottom: 18px;
+    left: 240px;
+}
+
+.home-content h3 {
+    margin-bottom: 13px;
 }
 
 .copyrit {
@@ -803,21 +825,73 @@ span {
 @media(max-width:590px) {
     .choose-btn {
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        gap: 5px;
         flex-direction: column;
-        margin: 0 auto;
+        align-items: center;
+        margin-right: 100px;
+        padding: 20px;
     }
     .choose-btn {
-        position: absolute;
-        left: 140px;
+        position: relative;
+        left: 5px;
         bottom: 0;
+        margin-right: 40px;
+        font-size: 10px;
+        align-items: center;
+    }
+    .adventure-btn {
+        border-radius: 40px;
+        margin-top: 30px;
+        padding: 15px;
+        margin-right: 90px;
+    }
+    .adventure-btn a {
+        margin-top: 10px;
+        font-size: 10px;
+        font: large;
+    }
+    .adventure-btn1 a {
+        padding: 10px;
+        font-size: 13px;
+    }
+    .home-content h1 {
+        font-size: 20px;
+    }
+    .home-content h3 {
+        font-size: 15px;
     }
 }
 
 @media(max-width:550px) {
     .bout-content p {
         font-size: 20px;
+    }
+}
+
+@media(max-width:471px) {
+    .home-content h1 {
+        font-size: 10px;
+    }
+    .about-content p {
+        font-size: 10px;
+    }
+    .adventure-btn {
+        border-radius: 40px;
+        margin-top: 30px;
+        padding: 10px;
+        padding: 15px;
+        margin-right: 90px;
+        width: 120px;
+    }
+    .adventure-btn1 {
+        padding: 10px;
+        width: 120px;
+        border-radius: 40px;
+    }
+    .adventure-btn a {
+        margin-top: 10px;
+        font-size: 10px;
+        font: large;
     }
 }
 
@@ -837,8 +911,12 @@ span {
 }
 
 @media(max-width:430px) {
-    .about-content p {
+    .about-content h1 {
+        font-size: 20px;
+    }
+    .about-content h3 {
         font-size: 15px;
+        letter-spacing: 1.5rem;
     }
     .ceo img {
         width: 300px;
@@ -854,22 +932,20 @@ span {
     flex-direction: column-reverse;
 }
 
-@media(max-width:365px) {
-    #menu-icon {
-        display: block;
+@media(max-width:386px) {
+    .adventure-btn1 {
+        padding: 10px;
+        width: 100px;
+        border-radius: 40px;
     }
-    .home img {
-        width: 90vw;
+    .adventure-btn a {
+        margin-top: 10px;
+        font-size: 10px;
+        width: 100px;
+        font: large;
     }
-    .about img {
-        width: 70vw;
-    }
-    .footer {
-        flex-direction: column-reverse;
-    }
-    .footer p {
-        text-align: center;
-        margin-top: 2rem;
+    .home-content h3 {
+        font-size: 10px;
     }
 }
 
