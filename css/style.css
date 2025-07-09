@@ -723,6 +723,10 @@ span {
     color: #dcaf85;
 }
 
+.sidebar .close {
+    width: 0px;
+}
+
 .journey-box {
     margin-top: 30px;
 }
@@ -1003,6 +1007,9 @@ span {
     .projects {
         padding-bottom: 1rem;
     }
+    .about-content .content-para {
+        font-size: 20px;
+    }
 }
 
 @media(max-width:617px) {
@@ -1072,6 +1079,10 @@ span {
     }
     .home-content h1 {
         font-size: 30px;
+    }
+    .starter .starter-content h1 {
+        margin-top: 200px;
+        font-size: 60px;
     }
 }
 

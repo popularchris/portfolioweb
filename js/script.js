@@ -1,7 +1,5 @@
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll(' nav   li');
-console.log(navLinks)
-
 navLinks.forEach(link => {
         link.addEventListener('click', function() {
             navLinks.forEach(item => {
@@ -17,47 +15,46 @@ ScrollReveal({
     duration: 2000,
     delay: 200,
 });
-ScrollReveal().reveal('.home-image, .service-container,.portfolio-box,.contact form', { origin: 'bottom' });
-// ScrollReveal().reveal('.home-content h1, about-image', { origin: 'left' })
-// ScrollReveal().reveal('.home-content p, home-content', { origin: 'right' });
-// ScrollReveal().reveal('.adventure-btn', { origin: 'left' })
-// ScrollReveal().reveal('.adventure-btn1', { origin: 'right' })
-// ScrollReveal().reveal('.home-content p, home-content', { origin: 'right' });
+ScrollReveal().reveal('.home-content', '.ceop', { origin: 'top' });
+ScrollReveal().reveal('.ceop', { origin: 'top' });
+ScrollReveal().reveal('.spanp', { origin: 'bottom' });
 ScrollReveal().reveal('.starter-content', { origin: 'top' });
 ScrollReveal().reveal('.about-content', { origin: 'top' });
 ScrollReveal().reveal('.ceo-heading', { origin: 'top' });
-// ScrollReveal().reveal('.ceop', { origin: 'right' });
-// ScrollReveal().reveal('.ceoimg', { origin: 'left' });
 ScrollReveal().reveal('.about-content', '.home-content', { origin: 'top' });
-ScrollReveal().reveal('.services', { origin: 'bottom' });
+ScrollReveal().reveal('.services', { origin: 'top' });
 ScrollReveal().reveal('.spanheading', { origin: 'top' });
-// ScrollReveal().reveal('.spanp', { origin: 'left' });
-// ScrollReveal().reveal('.destination-plan', { origin: 'right' });
+ScrollReveal().reveal('.contact-us', { origin: 'top' });
+ScrollReveal().reveal('.contact', { origin: 'top' });
+ScrollReveal().reveal('.heading', { origin: 'top' });
 ScrollReveal().reveal('.footer-box', { origin: 'bottom' });
+ScrollReveal().reveal('.portfolio-container', { origin: 'bottom' });
+ScrollReveal().reveal('.journey', { origin: 'top' });
 
 
-const sec = document.querySelectorAll("section");
-const navLi = document.querySelectorAll("li");
-window.addEventListener("scroll", () => {
-    let current = "";
-    sec.forEach((sec) => {
-        const sectionTop = sec.offsetTop;
-        const sectionHeight = sec.clientHeight;
-        if (pageYOffset >= sectionTop - sectionHeight / 3) {
-            current = sec.getAttribute("id");
-        }
-    });
-
-    navLi.forEach((li) => {
-        li.classList.remove("active");
-        if (li.classList.contains(current)) {
-            li.classList.add("active");
-        }
-    });
-});
 
 const menuIcon = document.querySelector('.menu-icon1')
 menuIcon.addEventListener('click', function() {
     const sidebar = document.querySelector('.sidebar')
     sidebar.classList.toggle('open')
 })
+
+
+// const sidebarr = document.querySelector('.sidebar');
+// const sidebarLinks = document.querySelectorAll('a');
+
+// function closeSidebar() {
+//     sidebarr.style.width = '0'
+// }
+// sidebarLinks.forEach(link => {
+//     link.addEventListener('click', closeSidebar)
+// })
+
+
+
+
+// const menuIcon2 = document.querySelector('.menu-icon1')
+// menuIcon2.addEventListener('click', function() {
+//     const safarinav = document.getElementById('sidebar')
+//     safarinav.classList.toggle('open')
+// })
