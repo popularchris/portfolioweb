@@ -429,15 +429,131 @@ span {
     cursor: pointer;
 }
 
+.journey h2 {
+    margin-bottom: 3rem;
+}
+
+.journey form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.journey form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: var(--text-color);
+}
+
+.journeyinput-box input,
+.journey form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.3rem;
+    color: #000000;
+    background-color: transparent;
+    border-radius: .8rem;
+    margin: .7rem 0;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+
+.journeyinput-box input {
+    width: 49%;
+}
+
+.journey form textarea {
+    resize: none;
+}
+
+.journey form .journey-btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.journey-btn {
+    background-color: #2A312c;
+    color: #ffff;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.journey h2 {
+    margin-bottom: 3rem;
+}
+
+.contactus-body {
+    background-color: #fff5;
+}
+
+.contactus-heading {
+    color: #000000;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+#contactus-footer {
+    background-color: #2A312c;
+    padding: 20px;
+}
+
+.contact-us form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-us form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: var(--text-color);
+}
+
+.contactinput-box input,
+.contact-us form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.3rem;
+    color: #000000;
+    background-color: transparent;
+    border-radius: .8rem;
+    margin: .7rem 0;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+
+.contactinput-box input {
+    width: 49%;
+}
+
+.journey form textarea {
+    resize: none;
+}
+
+.journey form .journey-btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.contact-btn {
+    background-color: #2A312c;
+    color: #ffff;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
 .footer {
     color: #dcaf85;
     font-size: 1.7rem;
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
-    height: 200px;
     gap: 5rem;
-    padding: 4rem 9%;
+    padding: 30px;
     background: var(--second-bg-color);
 }
 
@@ -493,11 +609,19 @@ span {
 
 .vision h1 {
     text-align: center;
-    font-size: 70px;
+}
+
+.vision .spanheading {
+    margin-bottom: 40px;
+    font-size: 50px;
 }
 
 .vision p {
     color: #2a312c;
+}
+
+.vision .vision-content p {
+    font-size: 20px;
 }
 
 .home-image img {
@@ -545,12 +669,20 @@ span {
 }
 
 .interest-container label {
-    color: #dcaf85;
+    color: #000000;
+}
+
+.journey-footer {
+    background-color: #2A312c;
+    padding: 20px;
 }
 
 .about-content p {
-    font-size: 25px;
     color: #dcaf85;
+}
+
+.about-content .content-para {
+    font-size: 30px;
 }
 
 .choose-btn {
@@ -581,23 +713,36 @@ span {
 }
 
 .expert-btn {
+    background-color: #fff;
     color: #dcaf85;
     padding: 10px 10px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .expert-btn a {
     color: #dcaf85;
 }
 
+.journey-box {
+    margin-top: 30px;
+}
+
+.heading-journey {
+    font-size: 20px;
+}
+
 .contact-body {
-    background-color: #dcaf85;
+    background-color: #fff5;
     color: #000000;
 }
 
 .expert-btn:hover {
-    background-color: #80808080;
-    text-decoration: none;
+    color: #000000;
+    box-shadow: 0 0 1rem var(--text-color);
+}
+
+.expert-btn a:hover {
+    color: #272727;
 }
 
 @keyframes change {
@@ -670,6 +815,9 @@ span {
         font-size: 40px;
         line-height: 10rem;
     }
+    /* .footer-box {
+        margin-top: 200px;
+    } */
 }
 
 @media(max-width:991px) {
@@ -788,10 +936,13 @@ span {
 }
 
 @media(max-width:737px) {
-    .menu-icon {
+    /* .menu-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
         display: flex;
         height: 40px;
-    }
+    } */
     .logo-heading {
         font-size: 30px;
     }
@@ -800,14 +951,14 @@ span {
     }
     .sidebar {
         display: flex;
+        height: 0;
         position: absolute;
-        top: 80px;
+        top: 77px;
         right: 0;
         left: 0;
-        background-color: #000000;
+        background-color: #fff;
         flex-direction: column;
-        padding: 10px;
-        opacity: 0;
+        opacity: 1;
         transition: 0.3s ease;
         overflow: hidden;
     }
@@ -1112,6 +1263,12 @@ span {
     .heading {
         font-size: 25px;
     }
+    /* .footer {
+        flex-direction: column;
+    } */
+    /* .footer-box {
+        flex-direction: column;
+    } */
 }
 
 @media(max-width:350px) {
@@ -1137,6 +1294,12 @@ span {
     }
     .contact h2 {
         font-size: 15px;
+    }
+}
+
+@media(max-width:338px) {
+    .home-content {
+        width: 100%;
     }
 }
 
